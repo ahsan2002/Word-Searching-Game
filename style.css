@@ -1,0 +1,43 @@
+.line{
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+
+body{
+    user-select: none;
+}
+.box{
+    padding: 12px;
+    border: 2px solid black;
+    margin: 20px;
+    background-color: rgb(18, 160, 207);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.screen{
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.btn {
+    padding: 12px;
+    border: 2px solid black;
+    margin: 20px;
+    background-color: rgb(18, 103, 207);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+#foword{
+    text-align: center;
+    font-size: 25px;
+}

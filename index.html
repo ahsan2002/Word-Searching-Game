@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main1">
+        <h1 style="text-align: center;"> <u>Word Searching Game</u></h1>
+        <h3>Points:<div  id="totalcount"></div></h3>
+        <!-- <div class="time">Timer: <progress value="0" max="10" id="progressBar"></progress> </div> -->
+        <div id="input" class="screen"></div>
+        <div class="btn btn-operator " onclick="remove()">⌦</div>
+
+    </div>
+
+   <div class="main">
+    <div class="line">
+        <div onclick="getvalue('i')" class="box">i</div>
+        <div onclick="getvalue('j')" class="box">j</div>
+        <div onclick="getvalue('k')" class="box">k</div>
+        <div onclick="getvalue('l')" class="box">l</div>
+        <div onclick="getvalue('m')" class="box">m</div>
+        <div onclick="getvalue('n')" class="box">n</div>
+        <div onclick="getvalue('o')" class="box">o</div>
+        <div onclick="getvalue('p')" class="box">p</div>
+    </div>
+
+    
+    <div class="line">
+        <div onclick="getvalue('a')" class="box">a</div>
+        <div onclick="getvalue('b')" class="box">b</div>
+        <div onclick="getvalue('c')" class="box">c</div>
+        <div onclick="getvalue('d')" class="box">d</div>
+        <div onclick="getvalue('e')" class="box">e</div>
+        <div onclick="getvalue('f')" class="box">f</div>
+        <div onclick="getvalue('g')" class="box">g</div>
+        <div onclick="getvalue('h')" class="box">h</div>
+    </div>
+    <div class="line">
+        <div onclick="getvalue('q')" class="box">q</div>
+        <div onclick="getvalue('r')" class="box">r</div>
+        <div onclick="getvalue('s')" class="box">s</div>
+        <div onclick="getvalue('t')" class="box">t</div>
+        <div onclick="getvalue('u')" class="box">u</div>
+        <div onclick="getvalue('v')" class="box">v</div>
+        <div onclick="getvalue('w')" class="box">w</div>
+        <div onclick="getvalue('x')" class="box">x</div>
+        <div onclick="getvalue('y')" class="box">y</div>
+        <div onclick="getvalue('z')" class="box">z</div>
+    </div>
+   </div>
+
+   <div class="btn btn-operator " onclick="match()">Check Word</div>
+
+<div id="foword">
+    <h1>Matched Words</h1>
+</div>
+
+
+    <!--Script-->
+    <script src="app.js"></script>
+    <script src="words.js"></script>
+</body>
+</html>
