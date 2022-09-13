@@ -7,24 +7,29 @@ ttime.innerHTML = count;
 function getvalue(val){
     var value=val;
     display(val);
-
 }
 
 function display(v) {
         inputData.innerText += v;
-
 }
 
 function remove() {
-
     var rev = inputData.innerText;
     inputData.innerText = rev.substring(0, rev.length - 1);
-
 }
 
+var words=[];
 
 function match() {
-    if (Dictonery.includes(inputData.innerText)) {
+    var i=inputData.innerText;
+        
+        if (words.includes(i)) {
+            alert("word is already found");
+            inputData.innerText="";
+            
+        }
+        else if (Dictonery.includes(i)){
+            words.push(i);
         alert("word found");
         document.getElementById("foword").innerHTML += "<li>" + inputData.innerText+ "</li>";
         inputData.innerText="";
